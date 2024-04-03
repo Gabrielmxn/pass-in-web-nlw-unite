@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, MoreHorizontal, Search } from "lucide-react";
+import { IconButton } from "./icon-button";
 
 export function AttendeeList(){
   return(
@@ -13,7 +14,7 @@ export function AttendeeList(){
       <div className="border border-white/10 rounded-lg">
       <table className="w-full">
         <thead>
-          <tr className="border-b border-white/10 hover:bg-white/5">
+          <tr className="border-b border-white/10 ">
             <th style={{width: 48}} className="py-3 px-4 text-sm font-semibold">
               <input type="checkbox" className="size-4 bg-black/20 rounded border border-white/10 accent-orange-400" />
             </th>
@@ -58,18 +59,18 @@ export function AttendeeList(){
              <div className="inline-flex items-center gap-8">
              <span> Página 1 de 23</span>
               <div className="flex gap-1.5">
-                <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+               <IconButton>
                   <ChevronsLeft className="size-4"/>
-                </button>
-                <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+                </IconButton>
+               <IconButton>
                   <ChevronLeft className="size-4"/>
-                </button>
-                <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+                </IconButton>
+               <IconButton>
                   <ChevronRight className="size-4"/>
-                </button>
-                <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+                </IconButton>
+               <IconButton>
                   <ChevronsRight className="size-4"/>
-                </button>
+                </IconButton>
               </div>
              </div>
             </td>
